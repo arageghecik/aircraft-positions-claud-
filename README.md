@@ -31,3 +31,5 @@ and in application.properties we set the direction where are sanding we data (ap
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
 	</dependency>
+	
+	##### chapter 7
