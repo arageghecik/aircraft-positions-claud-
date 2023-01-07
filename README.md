@@ -17,13 +17,12 @@ and in application.properties we set the direction where are sanding we data (ap
 ![WebSocket](https://user-images.githubusercontent.com/118361758/204624007-4b112159-25d6-4d37-b6b1-cbcdbbc9c035.png)
 
   its need some libs for cloud technology
-  
-...xml
-  <dependency>
+```xml
+	<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
 	</dependency>
-  <dependency>
+  	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
 	</dependency>
@@ -31,7 +30,12 @@ and in application.properties we set the direction where are sanding we data (ap
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
 	</dependency>
-</code>
-...
 
+```
+in .properties file
+```
+spring.cloud.stream.bindings.retrieveAircraftPositions-in-0.destination=aircraftpositions
+spring.cloud.stream.bindings.retrieveAircraftPositions-in-0.group=aircraftpositions
+spring.cloud.stream.bindings.retrieveAircraftPositions-in-0.binder=rabbit
+```
  chapter 7
