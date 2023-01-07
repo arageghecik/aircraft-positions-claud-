@@ -18,7 +18,7 @@ and in application.properties we set the direction where are sanding we data (ap
 
   its need some libs for cloud technology
   
- 
+...xml
   <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
@@ -31,5 +31,7 @@ and in application.properties we set the direction where are sanding we data (ap
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
 	</dependency>
-	
+</code>
+...
+
  chapter 7
